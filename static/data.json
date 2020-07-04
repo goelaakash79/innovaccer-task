@@ -1,0 +1,73 @@
+{
+    "about": {
+        "name": "Aakash Goel",
+        "portfolio": "https://goelaakash79.github.io",
+        "social": [
+            "https://www.linkedin.com/in/goelaakash79",
+            "https://www.github.com/goelaakash79",
+            "https://www.twitter.com/goelaakash79",
+            "https://www.medium.com/@goelaakash79"
+        ],
+        "email": "goelaakash79@gmail.com",
+        "mobile": "8791431819",
+        "location": "Saharanpur, Uttar Pradesh",
+        "tagline": "It's okay to say okay."
+    },
+    "achievements": [
+        "Won inter-college techfest and a hackathon powered by Github and Microsoft",
+        "Selected by Google to lead the Developer Student Clubs KIET for the year 2019-2020",
+        "Scored ZERO backs in all semsters :)"
+    ],
+    "work": [
+        {
+            "role": "Web Development Intern",
+            "company": "NK LEARNICARE",
+            "location": "MUMBAI (REMOTE)",
+            "desc": "Rebuilt the event management & candidate registration portal from PHP to NodeJS single-handedly in less than 2 months"
+        },
+        {
+            "role": "Fullstack Developer",
+            "company": "TEAM ERP KIET",
+            "location": "GHAZIABAD",
+            "desc": "Built the backend of annual appraisal system in Django and work on the android app developement."
+        },
+        {
+            "role": "Full-stack Developer Intern",
+            "company": "TECTONIC ENTERPRISES PVT. LTD",
+            "location": "GHAZIABAD",
+            "desc": "Worked on the client product that helps mothers to track their health during the pre-pregnancy timeline."
+        },
+        {
+            "role": "Frontend Developer Intern",
+            "company": "VIDGYOR MEDIA TECHNOLOGIES",
+            "location": "BENGALURU",
+            "desc": "Worked on the product \"V-Prism\", that enable news channels and other media platforms to create live feeds & then clip and upload videos to Youtube"
+        }
+    ],
+    "education": [
+        {
+            "type": "Graduation",
+            "course": "B.Tech",
+            "stream": "Computer Science",
+            "score": 7.8,
+            "batch": "2016-2020",
+            "college": "KIET Group of Institutions"
+        },
+        {
+            "type": "Intermediate",
+            "course": "12th",
+            "stream": "PCM",
+            "score": 84.6,
+            "batch": "2014-2016",
+            "college": "S.P. Convent School"
+        },
+        {
+            "type": "High-School",
+            "course": "10th",
+            "stream": "PCMB",
+            "score": 92.6,
+            "batch": "2013-2014",
+            "college": "Rainbow School"
+        }
+    ]
+}
