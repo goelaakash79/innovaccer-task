@@ -13,7 +13,13 @@ const Blog = ({ data }) => {
 									<h5>
 										{"🚀"} {blog.title}
 									</h5>
-									<p className="description">
+									<p
+										className="description"
+										style={{
+											fontWeight: 400,
+											fontSize: 14
+										}}
+									>
 										<span className="tag">
 											{blog.readtime} read
 										</span>{" "}

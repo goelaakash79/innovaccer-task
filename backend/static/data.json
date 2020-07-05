@@ -88,5 +88,25 @@
             "readtime": "3 min",
             "link": "https://medium.com/@dsckiet/experience-is-becoming-a-crucial-factor-for-employers-when-deciding-who-gets-their-foot-in-the-ba651465e090"
         }
+    ],
+    "projects": [
+        {
+            "image": "https://i.imgur.com/OX7Xukr.png",
+            "title": "Vprism",
+            "link": "http://vprism.vidgyor.com/",
+            "desc": "Video clipping tool that helps media companies to clip and share videos in no time."
+        },
+        {
+            "image": "https://i.imgur.com/5loPhqh.png",
+            "title": "Coderbano",
+            "link": "https://github.com/goelaakash79/coderbano-dev",
+            "desc": "Home for the programmers, where they can practice A2OJ questions and run their codes."
+        },
+        {
+            "image": "https://i.imgur.com/0pYlN3C.png",
+            "title": "DSC website",
+            "link": "https://dsckiet.com",
+            "desc": "Website developed for our student community. Tech n' tools used: Nextjs, Reactjs, Netlify"
+        }
     ]
 }

@@ -18,6 +18,8 @@ p {
 button,
 a {
 	font-family: Sen !important;
+	text-decoration: none !important;
+	font-weight: 700;
 }
 h1,
 h2,
@@ -37,6 +39,9 @@ h6 {
 }
 .basic-info-section {
 	margin-top: 120px;
+}
+.basic-info-section h1 {
+	font-size: 4rem;
 }
 .portfolio-name {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -292,4 +297,19 @@ h6 {
 	.front-image-responsive {
 		display: none;
 	}
+}
+
+.pro-section {
+	margin-top: 120px;
+}
+
+.pro-section .card {
+	border: none;
+	padding: 16px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+}
+
+.pro-section .card p {
+	font-size: 14px !important;
 }

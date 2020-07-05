@@ -6,7 +6,7 @@ const BasicInfo = ({ data }) => {
 			<div className="row">
 				<div className="col-md-6">
 					<h1 className="portfolio-name mb-4">
-						Hey {"👋"}, I'm{" "}
+						Hey {"👋"}!<br /> I'm{" "}
 						<span className="text-highlight">
 							{data && data.name.split(" ")[0]}
 						</span>
@@ -18,10 +18,11 @@ const BasicInfo = ({ data }) => {
 						Resume
 					</a>
 				</div>
-				<div className="col-md-6 text-center">
+				<div className="col-md-1"></div>
+				<div className="col-md-5 text-center">
 					<img
 						src="prime.svg"
-						width="64%"
+						width="100%"
 						alt="this is an svg illustration"
 						className="front-image-responsive"
 					/>
