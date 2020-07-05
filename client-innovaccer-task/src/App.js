@@ -1,23 +1,31 @@
 import React from "react";
-
-// const Header = React.lazy(() => import("./components/Header.js"));
-import Button from "./design-system/Button";
-import Container from "./design-system/Container";
+import "bootstrap/dist/css/bootstrap.min.css";
+const BasicInfo = React.lazy(() => import("./components/BasicInfo"));
+const Work = React.lazy(() => import("./components/Work"));
+const Education = React.lazy(() => import("./components/Education"));
+const Blog = React.lazy(() => import("./components/Blog"));
+const Achievements = React.lazy(() => import("./components/Achievements"));
+const Contact = React.lazy(() => import("./components/Contact"));
 
 function App() {
 	return (
 		<React.Suspense
 			fallback={
-				<div className="flex justify-center items-center h-screen">
-					<h1 className="font-serif text-4xl bold font-bold text-gray-700">
-						Loading ...
-					</h1>
+				<div className="loader-wrapper">
+					<h1 className="loader">Loading...</h1>
 				</div>
 			}
 		>
-			<Container>
-				<Button bg="red">Click me</Button>
-			</Container>
+			<div className="container">
+				<BasicInfo />
+				<div className="row main-section">
+					<Work />
+					<Education />
+				</div>
+				<Blog />
+				<Achievements />
+				<Contact />
+			</div>
 		</React.Suspense>
 	);
 }
