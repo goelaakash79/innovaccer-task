@@ -2,7 +2,6 @@ import React from "react";
 
 const Education = () => {
 	return (
-		// <div className="row work-section">
 		<div className="col-md-6">
 			<h3 className="section-heading">Education</h3>
 			<ul className="mt-4">
@@ -24,8 +23,6 @@ const Education = () => {
 				</li>
 			</ul>
 		</div>
-
-		// </div>
 	);
 };
 

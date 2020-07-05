@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 const BasicInfo = React.lazy(() => import("./components/BasicInfo"));
 const Work = React.lazy(() => import("./components/Work"));
 const Education = React.lazy(() => import("./components/Education"));
@@ -7,7 +8,7 @@ const Blog = React.lazy(() => import("./components/Blog"));
 const Achievements = React.lazy(() => import("./components/Achievements"));
 const Contact = React.lazy(() => import("./components/Contact"));
 
-function App() {
+const App = () => {
 	return (
 		<React.Suspense
 			fallback={
@@ -28,6 +29,6 @@ function App() {
 			</div>
 		</React.Suspense>
 	);
-}
+};
 
 export default App;
