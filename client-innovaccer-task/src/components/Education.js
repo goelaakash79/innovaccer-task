@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = ({ data }) => {
 	return (
-		<div className="col-md-6">
+		<div className="col-md-6 responsive">
 			<h3 className="section-heading">Education</h3>
 			<ul className="mt-4">
 				{data &&

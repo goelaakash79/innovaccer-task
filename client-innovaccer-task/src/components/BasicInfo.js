@@ -19,7 +19,12 @@ const BasicInfo = ({ data }) => {
 					</a>
 				</div>
 				<div className="col-md-6 text-center">
-					<img src="prime.svg" width="64%" alt="front-image" />
+					<img
+						src="prime.svg"
+						width="64%"
+						alt="this is an svg illustration"
+						className="front-image-responsive"
+					/>
 				</div>
 			</div>
 		</div>
