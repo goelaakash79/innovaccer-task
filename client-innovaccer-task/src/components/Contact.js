@@ -56,7 +56,9 @@ const Contact = ({ data, about }) => {
 						/>
 						<button
 							type="submit"
-							className="button"
+							className={
+								isloading ? "button-loading button" : "button"
+							}
 							disabled={isloading ? true : false}
 						>
 							{isloading ? "Sending" : "Send"}

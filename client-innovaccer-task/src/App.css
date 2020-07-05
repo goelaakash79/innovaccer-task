@@ -72,6 +72,9 @@ h6 {
 	color: #ffffff !important;
 	border: none;
 }
+.button-loading {
+	background-color: var(--shadow);
+}
 .loader-wrapper {
 	display: flex;
 	height: 100vh;
@@ -196,8 +199,7 @@ h6 {
 }
 
 .input-email {
-	border: 2.4px solid transparent;
-	background-color: var(--bg-light);
+	border: 2.4px solid var(--text);
 	border-radius: 8px;
 	padding: 12px 20px;
 	font-size: 14px;
@@ -234,9 +236,8 @@ h6 {
 	font-size: 14px;
 	transition: 0.4s all ease;
 	color: var(--text);
-	background-color: var(--bg-light);
+	border: 2.4px solid var(--text);
 	font-weight: 700;
-	border: 2.4px solid transparent;
 	padding: 12px 20px;
 }
 
