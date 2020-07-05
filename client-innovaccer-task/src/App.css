@@ -77,8 +77,16 @@ h6 {
 	color: #ffffff !important;
 	border: none;
 }
-.button-loading {
-	background-color: var(--shadow);
+.button:disabled {
+	background-color: var(--shadow) !important;
+	color: -internal-light-dark-color(
+		rgba(16, 16, 16, 0.3),
+		rgb(170, 170, 170)
+	) !important;
+	border-color: -internal-light-dark-color(
+		rgba(118, 118, 118, 0.3),
+		rgba(195, 195, 195, 0.3)
+	) !important;
 }
 .loader-wrapper {
 	display: flex;
