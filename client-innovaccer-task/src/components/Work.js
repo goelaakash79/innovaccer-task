@@ -1,36 +1,24 @@
 import React from "react";
 
-const Work = () => {
+const Work = ({ data }) => {
 	return (
 		<div className="col-md-6">
 			<h3 className="section-heading">Work Experiences</h3>
 			<ul className="mt-4">
-				<li className="card">
-					<h5>Web Development Intern</h5>
-					<p>
-						<span className="tag">
-							NK Learnicare - MUMBAI (REMOTE)
-						</span>
-					</p>
-					<p className="description">
-						Rebuilt the event management & candidate registration
-						portal from PHP to NodeJS single-handedly in less than 2
-						months
-					</p>
-				</li>
-				<li className="card">
-					<h5>Web Development Intern</h5>
-					<p>
-						<span className="tag">
-							NK Learnicare - MUMBAI (REMOTE)
-						</span>
-					</p>
-					<p className="description">
-						Rebuilt the event management & candidate registration
-						portal from PHP to NodeJS single-handedly in less than 2
-						months
-					</p>
-				</li>
+				{data &&
+					data.map(work => {
+						return (
+							<li className="card" key={work.company}>
+								<h5>{work.role}</h5>
+								<p>
+									<span className="tag">
+										{work.company} - {work.location}
+									</span>
+								</p>
+								<p className="description">{work.desc}</p>
+							</li>
+						);
+					})}
 			</ul>
 		</div>
 	);

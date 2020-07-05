@@ -1,16 +1,20 @@
 import React from "react";
 
-const Achievements = () => {
+const Achievements = ({ data }) => {
 	return (
 		<div className="ach-section">
 			<h3 className="section-heading">Achievements</h3>
 			<ul className="mt-4">
-				<li className="card">
-					<p>
-						{"🏅 🏆"} Won inter-college techfest and a hackathon
-						powered by Github and Microsoft
-					</p>
-				</li>
+				{data &&
+					data.map(ach => {
+						return (
+							<li className="card" key={ach}>
+								<p>
+									{"🏅 🏆"} {ach}
+								</p>
+							</li>
+						);
+					})}
 			</ul>
 		</div>
 	);

@@ -3,16 +3,17 @@
         "name": "Aakash Goel",
         "resume": "https://goelaakash79.github.io/images/resume_goelaakash79.pdf",
         "portfolio": "https://goelaakash79.github.io",
-        "social": [
-            "https://www.linkedin.com/in/goelaakash79",
-            "https://www.github.com/goelaakash79",
-            "https://www.twitter.com/goelaakash79",
-            "https://www.medium.com/@goelaakash79"
-        ],
         "email": "goelaakash79@gmail.com",
         "mobile": "8791431819",
         "location": "Saharanpur, Uttar Pradesh",
-        "tagline": "It's okay to say okay."
+        "tagline": "It's okay to say okay.I am frontend developer, who can code on server-side and design. Currently, I'm looking for work. Loves to contribute in tech communities. DSC Lead @ KIET"
+    },
+    "social": {
+        "linkedin": "https://www.linkedin.com/in/goelaakash79",
+        "github": "https://www.github.com/goelaakash79",
+        "twitter": "https://www.twitter.com/goelaakash79",
+        "behance": "https://www.behance.net/goelaakash79",
+        "medium": "https://www.medium.com/@goelaakash79"
     },
     "achievements": [
         "Won inter-college techfest and a hackathon powered by Github and Microsoft",
@@ -47,7 +48,6 @@
     ],
     "education": [
         {
-            "type": "Graduation",
             "course": "B.Tech",
             "stream": "Computer Science",
             "score": 7.8,
@@ -55,20 +55,38 @@
             "college": "KIET Group of Institutions"
         },
         {
-            "type": "Intermediate",
             "course": "12th",
             "stream": "PCM",
             "score": 84.6,
             "batch": "2014-2016",
-            "college": "S.P. Convent School"
+            "college": "S.P. Convent School, Saharanpur"
         },
         {
-            "type": "High-School",
             "course": "10th",
             "stream": "PCMB",
             "score": 92.6,
             "batch": "2013-2014",
-            "college": "Rainbow School"
+            "college": "Rainbow Public School, Saharanpur"
+        }
+    ],
+    "blogs": [
+        {
+            "title": "How to Add Custom Fonts to React Native Projects",
+            "tagline": "Being a UI designer, fonts matter a lot to me and custom fonts play an important role when it comes to building a decent looking User Interface. Today, I'll show how easy it is to add and use custom fonts in your react native project.",
+            "readtime": "3 min",
+            "link": "https://codeburst.io/how-to-add-a-custom-font-to-a-react-native-project-4b5ea13e788e"
+        },
+        {
+            "title": "MLH Local Hack Day 2019 | hack.status(200): How we organized our first hackathon from scratch",
+            "tagline": "With just a month of brainstorming, coding, and eating junk our team organized its first-ever hackathon in the college this previous week.",
+            "readtime": "5 min",
+            "link": "https://medium.com/dsckiet/mlh-local-hack-day-2019-hack-status-200-how-we-organized-our-first-hackathon-from-scratch-29deb4c203f9"
+        },
+        {
+            "title": "Value and Benefits of Internships",
+            "tagline": "Experience is becoming a crucial factor for employers when deciding who gets their foot in the door.",
+            "readtime": "3 min",
+            "link": "https://medium.com/@dsckiet/experience-is-becoming-a-crucial-factor-for-employers-when-deciding-who-gets-their-foot-in-the-ba651465e090"
         }
     ]
 }

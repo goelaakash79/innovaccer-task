@@ -1,25 +1,65 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { sendEmail } from "../utils/services";
 
-const Contact = () => {
+const Contact = ({ data, about }) => {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+	const [isloading, setIsLoading] = useState(false);
+
+	const handleSubmit = async e => {
+		e.preventDefault();
+		setIsLoading(true);
+		try {
+			const payload = { email, name, message };
+			const res = await sendEmail(payload);
+
+			if (!res.error) {
+				setEmail("");
+				setName("");
+				setMessage("");
+				setIsLoading(false);
+			}
+		} catch (err) {
+			setMessage("Error occurred, try again");
+			setIsLoading(false);
+		}
+	};
 	return (
 		<div className="contact-section">
 			<h3 className="section-heading">Let's talk</h3>
 			<div className="row mt-4">
 				<div className="col-lg-4 mb-4">
-					<form>
+					<form onSubmit={handleSubmit}>
 						<input
 							className="input-email mb-4"
 							type="name"
+							value={name}
+							required
+							onChange={({ target }) => setName(target.value)}
 							placeholder="enter your name"
 						/>
 						<input
 							className="input-email mb-4"
 							type="email"
+							required
+							value={email}
+							onChange={({ target }) => setEmail(target.value)}
 							placeholder="enter your email"
 						/>
-						<textarea rows="5" className="message mb-4" />
-						<button type="submit" className="button">
-							Send
+						<textarea
+							value={message}
+							rows="5"
+							className="message mb-4"
+							required
+							onChange={({ target }) => setMessage(target.value)}
+						/>
+						<button
+							type="submit"
+							className="button"
+							disabled={isloading ? true : false}
+						>
+							{isloading ? "Sending" : "Send"}
 						</button>
 					</form>
 				</div>
@@ -35,7 +75,7 @@ const Contact = () => {
 					</a>
 					<p>
 						<a
-							href="https://github.com/goelaakash79/innovaccer-task"
+							href={`mailto:${data && about.email}`}
 							aria-label="link-to-code"
 							className="link"
 						>
@@ -45,7 +85,7 @@ const Contact = () => {
 					<p className="description">Connect with me</p>
 					<div className="social-icons mb-4">
 						<a
-							href="https://twitter.com/dsckiet"
+							href={data && data.twitter}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -62,7 +102,7 @@ const Contact = () => {
 							</svg>
 						</a>
 						<a
-							href="https://github.com/goelaakash79"
+							href={data && data.github}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -79,7 +119,7 @@ const Contact = () => {
 							</svg>
 						</a>{" "}
 						<a
-							href="https://medium.com/@goelaakash79"
+							href={data && data.medium}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -96,22 +136,37 @@ const Contact = () => {
 							</svg>
 						</a>
 						<a
-							href="https://telegram.me/goelaakash79"
+							href={data && data.behance}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							<svg
+								viewBox="0 0 24 24"
 								stroke="currentColor"
 								fill="currentColor"
-								strokeWidth="0"
-								viewBox="0 0 448 512"
-								height="1em"
-								width="1em"
-								xmlns="http://www.w3.org/2000/svg"
+								width="22.258px"
 							>
-								<path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+								<path d="M12.363 14.947c0-1.848-.879-3.214-2.695-3.726 1.325-.631 2.016-1.587 2.016-3.074 0-2.932-2.192-3.647-4.721-3.647H0v14.721h7.158c2.684 0 5.205-1.283 5.205-4.274zM3.246 7.013h3.046c1.171 0 2.225.328 2.225 1.682 0 1.25-.82 1.753-1.98 1.753H3.246zm-.001 9.708v-4.054h3.538c1.429 0 2.333.594 2.333 2.102 0 1.487-1.079 1.952-2.4 1.952zM18.796 19.5c2.554 0 4.208-1.147 5.004-3.585h-2.592c-.279.91-1.429 1.391-2.321 1.391-1.721 0-2.625-1.005-2.625-2.713h7.713c.244-3.418-1.66-6.331-5.18-6.331-3.259 0-5.471 2.442-5.471 5.641 0 3.32 2.096 5.597 5.472 5.597zm-.092-9.026c1.475 0 2.217.864 2.341 2.277h-4.779c.097-1.401 1.03-2.277 2.438-2.277zM15.667 5.273h5.988v1.45h-5.988z" />
 							</svg>
-						</a>{" "}
+						</a>
+						<a
+							href={data && data.linkedin}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<svg
+								x="0px"
+								y="0px"
+								stroke="currentColor"
+								fill="currentColor"
+								width="22.258px"
+								height="22.258px"
+								viewBox="0 0 22.258 22.258"
+								xmlSpace="preserve"
+							>
+								<path d="M5.366 2.973c0 1.376-1.035 2.479-2.699 2.479h-.031C1.034 5.453 0 4.348 0 2.973 0 1.564 1.067.491 2.698.491 4.331.49 5.336 1.564 5.366 2.973zM.28 21.766h4.772V7.413H.28v14.353zM16.764 7.077c-2.531 0-3.664 1.39-4.301 2.37v.046h-.031a.232.232 0 00.031-.046V7.414H7.692c.062 1.345 0 14.353 0 14.353h4.771v-8.016c0-.432.029-.855.157-1.164.346-.854 1.132-1.747 2.446-1.747 1.729 0 2.42 1.319 2.42 3.247v7.68h4.771v-8.229c.001-4.412-2.355-6.461-5.493-6.461z" />
+							</svg>
+						</a>
 					</div>
 					<p className="credits">made on vscode with {"<JS/>"}</p>
 				</div>

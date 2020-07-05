@@ -1,26 +1,26 @@
 import React from "react";
 
-const Education = () => {
+const Education = ({ data }) => {
 	return (
 		<div className="col-md-6">
 			<h3 className="section-heading">Education</h3>
 			<ul className="mt-4">
-				<li className="card">
-					<h5>Computer Science - B.Tech</h5>
-					<p className="description">
-						<span className="tag">7.8 | 2016-2020</span>
-						<br />
-						KIET Group of Institutions
-					</p>
-				</li>
-				<li className="card">
-					<h5>Computer Science - B.Tech</h5>
-					<p className="description">
-						<span className="tag">7.8 | 2016-2020</span>
-						<br />
-						KIET Group of Institutions
-					</p>
-				</li>
+				{data &&
+					data.map(edu => {
+						return (
+							<li className="card" key={edu.course}>
+								<h5>
+									{edu.course} - {edu.stream}
+								</h5>
+								<p>
+									<span className="tag">
+										{edu.score} | {edu.batch}
+									</span>
+								</p>
+								<p className="description">{edu.college}</p>
+							</li>
+						);
+					})}
 			</ul>
 		</div>
 	);
