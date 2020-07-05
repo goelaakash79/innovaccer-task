@@ -14,14 +14,12 @@ const BasicInfo = ({ data }) => {
 					</h1>
 					<br />
 					<p className="mb-4">{data && data.tagline}</p>
-					{/* <br /> */}
 					<a href={data && data.resume} className="button">
 						Resume
 					</a>
 				</div>
-				{/* <div className="col-md-1"></div> */}
 				<div className="col-md-6 text-center">
-					<img src="prime.svg" width="64%" />
+					<img src="prime.svg" width="64%" alt="front-image" />
 				</div>
 			</div>
 		</div>
