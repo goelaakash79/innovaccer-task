@@ -25,25 +25,33 @@
             "role": "Web Development Intern",
             "company": "NK LEARNICARE",
             "location": "MUMBAI (REMOTE)",
-            "desc": "Rebuilt the event management & candidate registration portal from PHP to NodeJS single-handedly in less than 2 months"
+            "time": "Nov 2018 - Feb 2019",
+            "desc": "Rebuilt the event management & candidate registration portal from PHP to NodeJS single-handedly in less than 2 months",
+            "more": "Rebuilt the event management & candidate registration portal from PHP to NodeJS single-handedly in less than 2 months. Integrated mailing services and developed the employee management system. Tech Stack: Express, NodeJS, MongoDB, Vanilla JavaScript"
         },
         {
             "role": "Fullstack Developer",
             "company": "TEAM ERP KIET",
             "location": "GHAZIABAD",
-            "desc": "Built the backend of annual appraisal system in Django and work on the android app developement."
+            "time": "Aug 2017 - Jul 2018",
+            "desc": "Built the backend of annual appraisal system in Django and work on the android app developement.",
+            "more": "Worked on the annual appraisal system on server side using Django and MySQL as the Database. Also, developed the college website along with my teammates. Worked on an techfest event app on the android platform. Designed graphics and UIs for the team at times."
         },
         {
             "role": "Full-stack Developer Intern",
             "company": "TECTONIC ENTERPRISES PVT. LTD",
             "location": "GHAZIABAD",
-            "desc": "Worked on the client product that helps mothers to track their health during the pre-pregnancy timeline."
+            "time": "Jun 2019 - Jul 2020",
+            "desc": "Worked on the client product that helps mothers to track their health during the pre-pregnancy timeline.",
+            "more": "Worked on the client product that helps mothers to track their health during the pre-pregnancy timeline. Technologies Used: MERN stack, AWS S3, Digitalocean. Worked on three other projects as well."
         },
         {
             "role": "Frontend Developer Intern",
             "company": "VIDGYOR MEDIA TECHNOLOGIES",
             "location": "BENGALURU",
-            "desc": "Worked on the product \"V-Prism\", that enable news channels and other media platforms to create live feeds & then clip and upload videos to Youtube"
+            "time": "Jan 2020 - Apr 2020",
+            "desc": "Worked on the product \"V-Prism\", that enable news channels and other media platforms to create live feeds & then clip and upload videos to Youtube",
+            "more": "Worked on the product \"V-Prism\", that enable news channels and other media platforms to create live feeds & then clip and upload videos to Youtube. Integrated AWS Cognito Services for the authentication and Youtube video upload service."
         }
     ],
     "education": [
