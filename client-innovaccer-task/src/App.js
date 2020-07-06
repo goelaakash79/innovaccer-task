@@ -23,11 +23,7 @@ const App = () => {
 		<React.Suspense
 			fallback={
 				<div className="loader-wrapper">
-					<h1 className="loader text-center">
-						{" "}
-						<img src="loading.svg" style={{ width: 100 }} alt="" />
-						loading...
-					</h1>
+					<h1 className="loader text-center">loading...</h1>
 				</div>
 			}
 		>
