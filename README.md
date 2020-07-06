@@ -35,11 +35,11 @@ yarn start
 
 ## Directory Structure
 
-1. Frontend
-![enter image description here](https://i.imgur.com/MuHmUEa.png)
+| Directory | Structure |
+|--|--|
+| Frontend | <img src="https://i.imgur.com/MuHmUEa.png" width="200"/> |
+| Backend | <img src="https://i.imgur.com/NSPYNbD.png" width="200"/> |
 
-2. Backend
-![enter image description here](https://i.imgur.com/NSPYNbD.png)
 
 ## UI Screen
 <img src="https://i.imgur.com/XNY6cEI.png"/>
