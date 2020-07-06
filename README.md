@@ -9,11 +9,11 @@
 
 * Directions to setup backend
 ```bash
-$ cd backend
-$ virtualenv venv
-$ soucrce venv/Scripts/activate
-$ pip install -r requirements.txt
-$ python manage.py runserver
+cd backend
+virtualenv venv
+soucrce venv/Scripts/activate
+pip install -r requirements.txt
+python manage.py runserver
 ```
 
 Open `settings.py` and check the below code
@@ -22,11 +22,11 @@ Open `settings.py` and check the below code
 
 You can either add the `EMAIL_HOST_USER` and `EMAIL_HOST_PASSWOD` in your environment variables or simply replace `os.environ.get('EMAIL_HOST_USER')` with your email id and `os.environ.get('EMAIL_HOST_PASSWORD')` with the password to get started.
 
-* Directions to setup frontend
+* Directions to setup frontend (using yarn)
 ```bash
-$ cd client-innovaccer-task
-$ `yarn` or `npm install`
-$ `yarn start` or `npm start`
+cd client-innovaccer-task
+yarn
+yarn start
 ```
 ## Endpoints
 
@@ -41,7 +41,7 @@ $ `yarn start` or `npm start`
 2. Backend
 ![enter image description here](https://i.imgur.com/NSPYNbD.png)
 
-## UI Screenshot
+## UI Screen
 <img src="https://i.imgur.com/XNY6cEI.png"/>
 
 
